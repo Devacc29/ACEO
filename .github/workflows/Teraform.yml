@@ -25,7 +25,7 @@ jobs:
     defaults:
         run:
           shell: bash
-          working-directory: ./main
+          working-directory: tfmodule/*
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
