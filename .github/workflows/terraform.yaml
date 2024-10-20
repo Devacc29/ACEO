@@ -32,8 +32,8 @@ jobs:
             terraform_version: 1.6.4
 
         - name: Terraform Init
-          run: terraform init -backend-config="resource_group_name=$TF_VAR_state_resource_group_name" \
-                              -backend-config="storage_account_name=$TF_VAR_state_storage_account_name"
+          run: terraform init -backend-config="resource_group_name=$TF_STATE_RG" \
+                              -backend-config="storage_account_name=$TF_STATE_STR"
   
         - name: Terraform Format
           run: terraform fmt --recursive
