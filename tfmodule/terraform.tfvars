@@ -1,4 +1,4 @@
-resource_group = "test-rg-aceo"
+resource_group = "test-rg-aceo-01"
 location       = "eastus2"
 tags = {
   env        = "test"
