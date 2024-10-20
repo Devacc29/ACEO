@@ -17,6 +17,7 @@ jobs:
               cd ..
               pwd
               ls -Flah
+              ls ${{ github.workspace }}
     terraform:
       runs-on: ubuntu-latest
       env:
