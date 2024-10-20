@@ -1,10 +1,10 @@
 name: deva-aceo-tf-workflow
-on: 
-  push:
-    branches:
-    - main
-    paths:
-    - tfmodules/*
+on: workflow_dispatch
+  # push:
+  #   branches:
+  #   - main
+  #   paths:
+  #   - tfmodules/*
 
 jobs:
     job2:
