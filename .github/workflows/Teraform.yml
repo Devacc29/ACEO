@@ -58,7 +58,6 @@ jobs:
       
       - name: Terraform Plan
         id: plan
-        env:
         run: terraform plan 
 
       - name: Terraform Apply
