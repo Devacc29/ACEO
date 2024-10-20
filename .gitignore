@@ -1,5 +1,1 @@
-.terraform
-*.backup
-*.tfstate
-*.hcl
 **/.DS_Store
