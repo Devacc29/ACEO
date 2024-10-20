@@ -15,6 +15,9 @@ jobs:
           run: |
               pwd
               ls -Flah
+              cd ..
+              pwd
+              ls -Flah
     # terraform:
     #   runs-on: ubuntu-latest
     #   env:
