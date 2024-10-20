@@ -22,7 +22,7 @@ jobs:
         run:
           shell: bash
           # We keep Terraform files in the terraform directory.
-          working-directory: ./tfmodule
+          working-directory: ./tfmodule/*
   
       steps:
         - name: Checkout code
@@ -34,7 +34,12 @@ jobs:
             terraform_version: 1.6.4
 
         - name: Terraform Init
-          run: terraform init -backend-config="resource_group_name=$TF_STATE_RG" \
+          run:
+            set -e
+            pwd
+            ls -Flah
+            source ../tfmodule 
+            terraform init -backend-config="resource_group_name=$TF_STATE_RG" \
                               -backend-config="storage_account_name=$TF_STATE_STR"
   
         - name: Terraform Format
