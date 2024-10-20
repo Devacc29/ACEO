@@ -16,6 +16,8 @@ jobs:
         ARM_CLIENT_ID: ${{ secrets.ARM_CLIENT_ID }}
         ARM_SUBSCRIPTION_ID: ${{ secrets.ARM_SUBSCRIPTION_ID }}
         ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID }}
+        TF_STATE_RG: ${{secrets.TF_STATE_RG}}
+        TF_STATE_STR: ${{secrets.TF_STATE_STR}}
       defaults:
         run:
           shell: bash
